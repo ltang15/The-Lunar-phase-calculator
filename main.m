@@ -101,7 +101,7 @@ y = year - a + 4800;
 m = month + 12*a -3;
 
 %Calculate the Julian Day number for the input
-n_jd = floor(day + ((153*m +2)/5) + (365*y) + (y/4) - (y/100) + (y/400) - 32045);
+n_jd = day + (floor((153*m +2)/5)) + (365*y) + floor(y/4) - floor(y/100) + floor(y/400) - 32045;
 
 n0_jd = 2415021;% The Julian Day number for 01 JAN 1900
 
